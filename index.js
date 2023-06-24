@@ -508,7 +508,11 @@ addb.addEventListener('click', () => {
 
         let cart = document.getElementById('cart');
         cart.classList.add('cart')
-        cart.classList.remove('none')
+        cart.classList.remove('none');
+
+        let emptyc = document.getElementById('emptyc');
+        emptyc.classList.remove('contp');
+        emptyc.classList.add('nonec')
     }
 })
 
@@ -867,4 +871,18 @@ navclose.addEventListener('click', () => {
     let links = document.getElementById('links');
     links.classList.add('links');
     links.classList.remove('linksshow')
+})
+
+
+
+
+let checkout = document.getElementById('checkout');
+
+checkout.addEventListener('click', () => {
+    let emptyc = document.getElementById('emptyc');
+    emptyc.classList.remove('nonec')
+    emptyc.classList.add('contp')
+    let order = document.getElementById('order');
+    order.classList.add('none')
+    order.classList.remove('order')
 })

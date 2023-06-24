@@ -560,6 +560,10 @@ main{
     display: none;
 }
 
+.nonec{
+    display: none;
+}
+
 
 @media screen and (max-width: 600px) {
     .ham{
@@ -828,6 +832,10 @@ main{
     #deleteb{
         display: block;
         width: 20px;
+    }
+
+    .nonec{
+        display: none;
     }
 }
 

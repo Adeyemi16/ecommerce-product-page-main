@@ -865,12 +865,19 @@ menu.addEventListener('click', () => {
     let links = document.getElementById('links');
     links.classList.remove('links');
     links.classList.add('linksshow')
+
+    let main = document.getElementById('m');
+    main.classList.add('nonec');
 })
 
 navclose.addEventListener('click', () => {
     let links = document.getElementById('links');
     links.classList.add('links');
     links.classList.remove('linksshow')
+
+
+    let main = document.getElementById('m');
+    main.classList.remove('nonec');
 })
 
 

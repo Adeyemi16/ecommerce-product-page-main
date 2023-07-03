@@ -575,7 +575,25 @@ main{
     }
 
     .links{
-        display: none;
+        /* display: none; */
+        position: absolute;
+        background: var(--White);
+        display: flex;
+        flex-direction: column;
+        top: 0%;
+        box-sizing: border-box;
+        padding: 30px;
+        width: 100%;
+        height: 100%;
+        transition: .4s;
+        background: var(--White);
+        z-index: 50000;
+        left: -100%;
+        gap: 20px;
+        font-family: light;
+        color: var(--Dark-grayish-blue);
+        margin: 0;
+        align-items: center;
     }
 
     .linksshow{
@@ -588,6 +606,8 @@ main{
         padding: 30px;
         width: 100%;
         height: 100%;
+        right: 0%;
+        transition: .4s;
         background: var(--White);
         z-index: 50000;
         left: 0%;
